@@ -1,23 +1,23 @@
 /* side bar style */
 .sidebar-list {
-  font-size: 24px;
+  font-size: 1.5rem;
   text-align: left;
-  margin-top: 15px;
-  margin-left: 16px;
-  line-height: 56px;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  line-height: 4rem;
 }
 
-.sidebar-list i {
+.sidebar-list img {
   text-align: left;
-  margin-right: 4px;
+  margin-right: 0.6rem;
 }
 .sidebar-img {
-  padding-left: 15px;
-  padding-top: 20px;
+  padding-left: 1rem;
+  padding-top: 1.2rem;
 }
 .sidebar-btn {
   color: black;
-  margin-right: 5px;
+  margin-right: 0.4rem;
 }
 .search-btn {
   background: transparent;
@@ -26,10 +26,10 @@
 /* Navbar */
 .navbar-content {
   display: flex;
-  gap: 40px;
-  margin-top: 15px;
+  gap: 2.5rem;
+  margin-top: 1rem;
   color: black;
-  margin-left: 10px;
+  margin-left: 0.8rem;
 }
 .navbar-brand img {
   width: 150px;
@@ -45,10 +45,10 @@
 .navbar-content li,
 .navbar-content li p,
 .navbar-content li button {
-  font-size: 13px !important;
+  font-size: 0.9rem !important;
 }
 .navbar-content li i {
-  font-size: 16px;
+  font-size: 1rem;
 }
 .button {
   border: none;
@@ -79,15 +79,15 @@
   margin-left: 50px;
 } */
 .notification-btn {
-  font-size: 36px;
+  font-size: 2.4rem;
 }
 .user-info {
-  font-size: 36px;
+  font-size: 2.4rem;
 }
 /* box style */
 .card {
   border: none !important;
-  margin-top: 12px;
+  margin-top: 0.8rem;
 }
 .card .card-image {
   background-color: #e7f7ff;
@@ -110,7 +110,7 @@
   text-align: center;
   width: 100%;
   display: flex;
-  gap: 25px;
+  gap: 1.5rem;
   justify-content: center;
   align-items: center;
 }
@@ -125,25 +125,25 @@
 @media only screen and (max-width: 450px) {
   .footer-img {
     width: 250px;
-    margin-left: 15px;
-    margin-right: 15px;
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
   footer {
     width: 100px;
   }
   .card-body p,
   .categories-card .card-body p {
-    font-size: 0.6rem;
+    font-size: 0.4rem;
   }
 }
 
 .foot-img {
-  margin-bottom: 10px;
+  margin-bottom: 0.7rem;
   height: 200px;
   width: 84%;
-  margin-top: 10px;
-  margin-left: 35px;
-  margin-right: 10px;
+  margin-top: 0.7rempx;
+  margin-left: 2.2rem;
+  margin-right: 0.8rem;
   align-items: center;
   display: flex;
   justify-content: center;
