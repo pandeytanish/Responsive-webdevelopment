@@ -1,0 +1,151 @@
+/* side bar style */
+.sidebar-list {
+  font-size: 24px;
+  text-align: left;
+  margin-top: 15px;
+  margin-left: 16px;
+  line-height: 56px;
+}
+
+.sidebar-list i {
+  text-align: left;
+  margin-right: 4px;
+}
+.sidebar-img {
+  padding-left: 15px;
+  padding-top: 20px;
+}
+.sidebar-btn {
+  color: black;
+  margin-right: 5px;
+}
+.search-btn {
+  background: transparent;
+  border: none;
+}
+/* Navbar */
+.navbar-content {
+  display: flex;
+  gap: 40px;
+  margin-top: 15px;
+  color: black;
+  margin-left: 10px;
+}
+.navbar-brand img {
+  width: 150px;
+}
+.navbar-content {
+  width: 100%;
+  align-items: center !important;
+  justify-content: space-between !important;
+}
+/* .navbar-content li {
+  font-size: 14px !important;
+} */
+.navbar-content li,
+.navbar-content li p,
+.navbar-content li button {
+  font-size: 13px !important;
+}
+.navbar-content li i {
+  font-size: 16px;
+}
+.button {
+  border: none;
+}
+/* .balance {
+  margin-left: 60px;
+} */
+.add-money-btn,
+.more-btn {
+  background: #b9e9ff;
+  border: none;
+  color: #007d99;
+  font-weight: 450;
+  /* border-radius: 50px;
+  height: 40px;
+  width: 120px; */
+}
+/* .more-btn {
+  background: #b9e9ff;
+  border: none;
+  border-radius: 50px;
+  height: 40px;
+  width: 60px;
+  margin-left: 6px;
+  margin-right: 25px;
+} */
+/* .members {
+  margin-left: 50px;
+} */
+.notification-btn {
+  font-size: 36px;
+}
+.user-info {
+  font-size: 36px;
+}
+/* box style */
+.card {
+  border: none !important;
+  margin-top: 12px;
+}
+.card .card-image {
+  background-color: #e7f7ff;
+}
+.card .card-bg {
+  background-color: #f7f9ff;
+}
+/* .card-body {
+  font-size: 18px;
+} */
+/* .categories-card .card-body p {
+  font-size: 13px;
+} */
+
+/* footer style */
+.footer {
+  background-color: #e7f7ff;
+  color: black;
+  padding: 20px 0;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  align-items: center;
+}
+@media only screen and (max-width: 900px) {
+}
+@media only screen and (max-width: 600px) {
+  .footer {
+    display: block;
+  }
+}
+/* foot img style */
+@media only screen and (max-width: 450px) {
+  .footer-img {
+    width: 250px;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  footer {
+    width: 100px;
+  }
+  .card-body p,
+  .categories-card .card-body p {
+    font-size: 0.6rem;
+  }
+}
+
+.foot-img {
+  margin-bottom: 10px;
+  height: 200px;
+  width: 84%;
+  margin-top: 10px;
+  margin-left: 35px;
+  margin-right: 10px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  background-color: beige;
+}

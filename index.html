@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://getbootstrap.com/docs/5.3/assets/css/docs.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Bootstrap Example</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body>
+    <!-- Side Bar  -->
+    <div class="container text-center">
+      <div class="row my-2">
+        <div class="col-lg-3">
+          <div
+            class="offcanvas offcanvas-start"
+            data-bs-scroll="true"
+            data-bs-backdrop="false"
+            tabindex="-1"
+            id="offcanvasScrolling"
+            aria-labelledby="offcanvasScrollingLabel"
+          >
+            <div class="offcanvas-header">
+              <div class="offcanvas-title" id="offcanvasScrollingLabel">
+               <img src="./asset/image/logo.png" alt="">
+              </div>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="sidebar-list text-black list-unstyled text-2xl">
+                <li>
+                  <i class="fa-solid fa-money-bill-transfer"></i>Transaction
+                  History
+                </li>
+                <li><i class="fa-solid fa-calendar-days"></i>Booking</li>
+                <li><i class="fa-solid fa-spinner"></i>Application Status</li>
+                <li><i class="fa-solid fa-users"></i>Saathi Onboarding</li>
+                <li><i class="fa-solid fa-chart-line"></i>Growth Overview</li>
+                <li><i class="fa-solid fa-circle-user"></i>Profile</li>
+                <li><i class="fa-solid fa-gear"></i>Settings</li>
+                <li><i class="fa-solid fa-rectangle-ad"></i>Promotional</li>
+                <li><i class="fa-solid fa-user-plus"></i>Customer Register</li>
+                <li>
+                  <i class="fa-regular fa-rectangle-list"></i>Beneficiary
+                  Register
+                </li>
+                <li><i class="fa-solid fa-table-list"></i>Lead Generation</li>
+                <li><i class="fa-solid fa-circle-info"></i>Support</li>
+                <li><i class="fa-solid fa-user-minus"></i>Delete Account</li>
+                <li>
+                  <i class="fa-solid fa-arrow-right-from-bracket"></i>Logout
+                  Account
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <i class=""></i> -->
+    </div>
+
+    <!-- Nav Bar  -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <i
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasScrolling"
+          aria-controls="offcanvasScrolling"
+          class="sidebar-btn fa-solid fa-bars"
+        ></i>
+        <a class="navbar-brand mx-2" href="#">
+          <img src="./asset/image/logo.png" alt="">
+        </a>
+        <!-- Mobile View Toggle icon -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-content navbar-nav m-0">
+            <div class="d-flex">
+              <li class="nav-item pe-2">
+                <img src="./asset/icons/search.png" alt="">
+              </li>
+              <li class="nav-item pe-4">Home</li>
+              <li class="nav-item pe-4">Jobs</li>
+              <li class="nav-item pe-4">Schemes</li>
+              <li class="nav-item pe-4">History</li>
+            </div>
+            <div class="d-flex">
+              <li class="nav-item px-2">
+                <div class="balance d-flex flex-column">
+                  <p class="m-0">Balance Rs</p>
+                  <p class="m-0"><img src="./asset/icons/nav-wallet.png" alt="">100Rs</p>
+                </div>
+              </li>
+              <li class="nav-item px-2">
+                <button class="add-money-btn py-1 px-2 rounded-5">
+                  + Add Money
+                </button>
+                <button class="more-btn py-1 px-2 rounded-5">
+                  <i class="fa-solid fa-ellipsis"></i>
+                </button>
+              </li>
+            </div>
+            <div class="d-flex">
+              <li class="nav-item px-2">
+                <div class="members d-flex flex-column">
+                  <p class="m-0">Members</p>
+                  <p class="m-0">
+                    <!-- <i class="fa-regular fa-star-half-stroke me-1"></i>0 -->
+                    <img src="./asset/icons/members.png" alt="">
+                  </p>
+                </div>
+              </li>
+              <li class="nav-item pe-4">
+                <p>Verify KYC</p>
+              </li>
+              <li class="nav-item px-2">
+                <img src="./asset/icons/notification.png" alt="">
+              </li>
+              <li class="nav-item px-2">
+                <img src="./asset/icons/profile.png" alt="">
+              </li>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- front Banner With KYC Message Section  -->
+    <section>
+      <div
+        class="m-3 p-3 text-danger-emphasis bg-danger-subtle border border-danger-subtle"
+      >
+        <i class="fa-solid fa-circle-info"></i> Please Fill Your SajiloPay KYC
+        and get maximum limits on transaction
+      </div>
+      <div class="container text-center">
+        <div class="row my-2">
+          <div class="col-lg-8 col-md-12 col-sm-12">
+            <div class="container text-center">
+              <div class="row my-2">
+                <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                  <div class="card">
+                    <div
+                      class="px-lg-3 py-lg-5 p-md-5 p-3 card-image rounded-1"
+                    >
+                    <img src="./asset/icons/user.png" alt="">
+                    </div>
+                    <div class="card-body p-2">
+                      <p class="card-text">Recharge And Bill Payment</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                  <div class="card">
+                    <div
+                      class="px-lg-3 py-lg-5 p-md-5 p-3 card-image rounded-1"
+                    >
+                    <img src="./asset/icons/indo-nepal.png" alt="">
+                    </div>
+                    <div class="card-body p-2">
+                      <p class="card-text">Indo Nepal Services</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                  <div class="card">
+                    <div
+                      class="px-lg-3 py-lg-5 p-md-5 p-3 card-image rounded-1"
+                    >
+                    <img src="./asset/icons/banking.png" alt="">
+                    </div>
+                    <div class="card-body p-2">
+                      <p class="card-text">Banking And Insurance</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                  <div class="card">
+                    <div
+                      class="px-lg-3 py-lg-5 p-md-5 p-3 card-image rounded-1"
+                    >
+                    <img src="./asset/icons/find-jobs.png" alt="">
+                    </div>
+                    <div class="card-body p-2">
+                      <p class="card-text">Jobs</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex my-3 py-2 justify-content-sm-start">
+                <h4>Recently Used Services</h4>
+              </div>
+              <div class="row my-2">
+                <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                  <div class="card">
+                    <div
+                      class="px-lg-3 py-lg-5 p-md-5 p-3 card-image rounded-1"
+                    >
+                    <img src="./asset/icons/DTH.png" alt="">
+                    </div>
+                    <div class="card-body">
+                      <p class="card-text">DTH</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                  <div class="card">
+                    <div
+                      class="px-lg-3 py-lg-5 p-md-5 p-3 card-image rounded-1"
+                    >
+                    <img src="./asset/icons/prepaid.png" alt="">
+                    </div>
+                    <div class="card-body">
+                      <p class="card-text">Prepaid</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                  <div class="card">
+                    <div
+                      class="px-lg-3 py-lg-5 p-md-5 p-3 card-image rounded-1"
+                    >
+                    <img src="./asset/icons/top-up.png" alt="">
+                    </div>
+                    <div class="card-body">
+                      <p class="card-text">Top Up</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                  <div class="card">
+                    <div
+                      class="px-lg-3 py-lg-5 p-md-5 p-3 card-image rounded-1"
+                    >
+                    <img src="./asset/icons/DTH.png" alt="">
+                     
+                    </div>
+                    <div class="card-body">
+                      <p class="card-text">DTH</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-12 col-sm-12 col-12">
+            <div class="card">
+              <!-- <div class="px-lg-3 py-lg-5 p-3 card-image rounded-1">
+              </div> -->
+              <div class="card-body">
+                <img
+                  src="./asset/image/banner.png"
+                  alt=""
+                />
+                <!-- <p class="card-text">Promotional Banner</p> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Recharge and bill Payment Section -->
+    <section>
+      <div class="container text-center">
+        <div class="d-flex my-3 py-2 justify-content-sm-start">
+          <h4>Recharge And Bill Payment</h4>
+        </div>
+        <div class="row my-2">
+          <div class="col-lg col-md-3 col-sm-3 col-3">
+            <div class="card">
+              <div class="px-lg-3 py-lg-5 p-3 card-bg rounded-1">
+                <img src="./asset/icons/DTH.png" alt="">
+              </div>
+              <div class="card-body">
+                <p class="card-text">DTH NPL</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg col-md-3 col-sm-3 col-3">
+            <div class="card">
+              <div class="px-lg-3 py-lg-5 p-3 card-bg rounded-1">
+                <img src="./asset/icons/prepaid.png" alt="">
+              </div>
+              <div class="card-body">
+                <p class="card-text">Prepaid</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg col-md-3 col-sm-3 col-3">
+            <div class="card">
+              <div class="px-lg-3 py-lg-5 p-3 card-bg rounded-1">
+                <img src="./asset/icons/top-up.png" alt="">
+              </div>
+              <div class="card-body">
+                <p class="card-text">Topup</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg col-md-3 col-sm-3 col-3">
+            <div class="card">
+              <div class="px-lg-3 py-lg-5 p-3 card-bg rounded-1">
+                <img src="./asset/icons/internet.png" alt="">
+              </div>
+              <div class="card-body">
+                <p class="card-text">Internet</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg col-md-3 col-sm-3 col-3">
+            <div class="card">
+              <div class="px-lg-3 py-lg-5 p-3 card-bg rounded-1">
+                <img src="./asset/icons/DTH.png" alt="">
+              </div>
+              <div class="card-body">
+                <p class="card-text">DTH Ind</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg col-md-3 col-sm-3 col-3">
+            <div class="card">
+              <div class="px-lg-3 py-lg-5 p-3 card-bg rounded-1">
+                <img src="./asset/icons/Bill.png" alt="">
+              </div>
+              <div class="card-body">
+                <p class="card-text">Bill Payment</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg col-md-3 col-sm-3 col-3">
+            <div class="card">
+              <div class="px-lg-3 py-lg-5 p-3 card-bg rounded-1">
+                <img src="./asset/icons/postpaid.png" alt="">
+              </div>
+              <div class="card-body">
+                <p class="card-text">Postpaid</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg col-md-3 col-sm-3 col-3">
+            <div class="card">
+              <div class="px-lg-3 py-lg-5 p-3 card-bg rounded-1">
+                <img src="./asset/icons/insurance.png" alt="">
+              </div>
+              <div class="card-body">
+                <p class="card-text">Insurance</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mb-4">
+          <div class="col-lg col-md-3 col-sm-3 col-3">
+            <div class="card">
+              <div class="px-lg-3 py-lg-5 p-3 card-bg rounded-1">
+                <img src="./asset/icons/landline.png" alt="">
+              </div>
+              <div class="card-body">
+                <p class="card-text">Landline</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg col-md-3 col-sm-3 col-3">
+            <div class="card">
+              <div class="px-lg-3 py-lg-5 p-3 card-bg rounded-1">
+                <img src="./asset/icons/electricity.png" alt="">
+              </div>
+              <div class="card-body">
+                <p class="card-text">Electricity</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg col-md-3 col-sm-3 col-3">
+            <div class="card">
+              <div class="px-lg-3 py-lg-5 p-3 card-bg rounded-1">
+                <img src="./asset/icons/gas.png" alt="">
+              </div>
+              <div class="card-body">
+                <p class="card-text">Gas</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg col-md-3 col-sm-3 col-3">
+            <div class="card">
+              <div class="px-lg-3 py-lg-5 p-3 card-bg rounded-1">
+                <img src="./asset/icons/water.png" alt="">
+              </div>
+              <div class="card-body">
+                <p class="card-text">Water</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg col-md-3 col-sm-3 col-3">
+            <div class="card">
+              <div class="px-lg-3 py-lg-5 p-3 card-bg rounded-1">
+                <img src="./asset/icons/FastTag.png" alt="">
+              </div>
+              <div class="card-body">
+                <p class="card-text">Fastag</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg col-md-3 col-sm-3 col-3">
+            <div class="card">
+              <div class="px-lg-3 py-lg-5 p-3 card-bg rounded-1">
+                <img src="./asset/icons/loan.png" alt="">
+              </div>
+              <div class="card-body">
+                <p class="card-text">Loan</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg col-md-3 col-sm-3 col-3">
+            <div class="card">
+              <div class="px-lg-3 py-lg-5 p-3 card-bg rounded-1">
+                <img src="./asset/icons/boradband.png" alt="">
+              </div>
+              <div class="card-body">
+                <p class="card-text">Broadband</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg col-md-3 col-sm-3 col-3"></div>
+        </div>
+      </div>
+    </section>
+    <!-- Indo Nepal Services -->
+    <section>
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-lg-6 col-md-12 col-sm-12">
+            <div class="container text-center">
+              <div class="d-flex my-3 py-2 justify-content-sm-start">
+                <h4>Indo Nepal Services</h4>
+              </div>
+              <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                  <div class="card categories-card">
+                    <div class="px-lg-3 py-lg-5 p-3 card-bg rounded-1">
+                      <img src="./asset/icons/IME.png" alt="">
+                    </div>
+                    <div class="card-body">
+                      <p class="card-text py-2">IME Remittance</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                  <div class="card categories-card">
+                    <div class="px-lg-3 py-lg-5 p-3 card-bg rounded-1">
+                      <img src="./asset/icons/prabhu.png" alt="">
+                    </div>
+                    <div class="card-body">
+                      <p class="card-text py-2">Prabhu Remittance</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                  <div class="card categories-card">
+                    <div class="px-lg-3 py-lg-5 p-3 card-bg rounded-1">
+                      <img src="./asset/icons/utility.png" alt="">
+                    </div>
+                    <div class="card-body">
+                      <p class="card-text py-4">Utility App</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                  <div class="card categories-card">
+                    <div class="px-lg-3 py-lg-5 p-3 card-bg rounded-1">
+                      <img src="./asset/icons/top-up.png" alt="">
+                    </div>
+                    <div class="card-body">
+                      <p class="card-text py-4">Top up</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-12 col-sm-12"></div>
+        </div>
+      </div>
+    </section>
+    <!-- Banking Services -->
+    <section>
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-lg-6 col-md-12 col-sm-12">
+            <div class="container text-center">
+              <div class="d-flex my-3 py-2 justify-content-sm-start">
+                <h4>Banking Services</h4>
+              </div>
+              <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                  <div class="card categories-card">
+                    <div class="px-lg-3 py-lg-5 p-3 card-bg rounded-1">
+                      <img src="./asset/icons/domestic.png" alt="">
+                    </div>
+                    <div class="card-body">
+                      <p class="card-text">Domestic Money Transfer</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                  <div class="card categories-card">
+                    <div class="px-lg-3 py-lg-5 p-3 card-bg rounded-1">
+                      <img src="./asset/icons/AePS.png" alt="">
+                    </div>
+                    <div class="card-body">
+                      <p class="card-text py-4">AePS</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                  <div class="card categories-card">
+                    <div class="px-lg-3 py-lg-5 p-3 card-bg rounded-1">
+                      <img src="./asset/icons/Atm.png" alt="">
+                    </div>
+                    <div class="card-body">
+                      <p class="card-text py-2">
+                        Micro <br />
+                        ATM
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                  <div class="card categories-card">
+                    <div class="px-lg-3 py-lg-5 p-3 card-bg rounded-1">
+                      <img src="./asset/icons/loan-repay.png" alt="">
+                    </div>
+                    <div class="card-body">
+                      <p class="card-text py-2">Loan Repayment</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-12 col-sm-12"></div>
+        </div>
+      </div>
+    </section>
+    <!-- Travel -->
+    <section>
+      <div class="container text-center">
+        <div class="row my-2">
+          <div class="col-lg-6 col-md-12 col-sm-12">
+            <div class="container text-center">
+              <div class="d-flex my-3 py-2 justify-content-sm-start">
+                <h4>Travel</h4>
+              </div>
+              <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                  <div class="card categories-card">
+                    <div class="px-lg-3 py-lg-5 p-3 card-bg rounded-1">
+                      <img src="./asset/icons/bus.png" alt="">
+                    </div>
+                    <div class="card-body">
+                      <p class="card-text py-3">Bus Booking</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                  <div class="card categories-card">
+                    <div class="px-lg-3 py-lg-5 p-3 card-bg rounded-1">
+                      <img src="./asset/icons/flight.png" alt="">
+                    </div>
+                    <div class="card-body">
+                      <p class="card-text py-3">Flight Booking</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                  <div class="card categories-card">
+                    <div class="px-lg-3 py-lg-5 p-3 card-bg rounded-1">
+                      <img src="./asset/icons/find-candid.png" alt="">
+                    </div>
+                    <div class="card-body">
+                      <p class="card-text py-3">Find Candidate</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                  <div class="card categories-card">
+                    <div class="px-lg-3 py-lg-5 p-3 card-bg rounded-1">
+                      <img src="./asset/icons/goverment.png" alt="">
+                    </div>
+                    <div class="card-body">
+                      <p class="card-text py-3">Goverment Job</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-12 col-sm-12"></div>
+        </div>
+      </div>
+    </section>
+    <!-- Jobs -->
+    <section>
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-lg-6 col-md-12 col-sm-12">
+            <div class="container text-center">
+              <div class="d-flex my-3 py-2 justify-content-sm-start">
+                <h4>Jobs</h4>
+              </div>
+              <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                  <div class="card categories-card">
+                    <div class="px-lg-3 py-lg-5 p-3 card-bg rounded-1">
+                      <img src="./asset/icons/Build-resume.png" alt="">
+                    </div>
+                    <div class="card-body">
+                      <p class="card-text">Build Resume</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                  <div class="card categories-card">
+                    <div class="px-lg-3 py-lg-5 p-3 card-bg rounded-1">
+                      <img src="./asset/icons/find-job.png" alt="">
+                    </div>
+                    <div class="card-body">
+                      <p class="card-text">
+                        Find 
+                        <br>
+                        Jobs
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                  <div class="card categories-card">
+                    <div class="px-lg-3 py-lg-5 p-3 card-bg rounded-1">
+                      <img src="./asset/icons/find-candid.png" alt="">
+                    </div>
+                    <div class="card-body">
+                      <p class="card-text">Find Candidate</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                  <div class="card categories-card">
+                    <div class="px-lg-3 py-lg-5 p-3 card-bg rounded-1">
+                      <img src="./asset/icons/goverment.png" alt="">
+                    </div>
+                    <div class="card-body">
+                      <p class="card-text">Goverment Jobs</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-12 col-sm-12"></div>
+        </div>
+      </div>
+    </section>
+    <!-- Schemes -->
+    <section>
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-lg-6 col-md-12 col-sm-12">
+            <div class="container text-center">
+              <div class="d-flex my-3 py-2 justify-content-sm-start">
+                <h4>Schemes</h4>
+              </div>
+              <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                  <div class="card categories-card">
+                    <div class="px-lg-3 py-lg-5 p-3 card-bg rounded-1">
+                      <img src="./asset/icons/Schems.png" alt="">
+                    </div>
+                    <div class="card-body">
+                      <p class="card-text">Explore Schemes</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                  <div class="card categories-card">
+                    <div class="px-lg-3 py-lg-5 p-3 card-bg rounded-1">
+                      <img src="./asset/icons/eligibility.png" alt="">
+                    </div>
+                    <div class="card-body">
+                      <p class="card-text">Check your Eligibility</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                  <div class="card categories-card">
+                    <div class="px-lg-3 py-lg-5 p-3 card-bg rounded-1">
+                      <img src="./asset/icons/apply.png" alt="">
+                    </div>
+                    <div class="card-body">
+                      <p class="card-text">Apply for Schemes</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                  <div class="card categories-card">
+                    <div class="px-lg-3 py-lg-5 p-3 card-bg rounded-1">
+                      <img src="./asset/icons/book.png" alt="">
+                    </div>
+                    <div class="card-body">
+                      <p class="card-text py-2">Book</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-12 col-sm-12"></div>
+        </div>
+      </div>
+    </section>
+    <!-- Business and Document  -->
+    <section>
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-lg-6 col-md-12 col-sm-12">
+            <div class="container text-center">
+              <div class="d-flex my-3 py-2 justify-content-sm-start">
+                <h4>Business and Document</h4>
+              </div>
+              <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                  <div class="card categories-card">
+                    <div class="px-lg-3 py-lg-5 p-3 card-bg rounded-1">
+                      <img src="./asset/icons/document.png" alt="">
+                    </div>
+                    <div class="card-body">
+                      <p class="card-text">Document Advisor</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                  <div class="card categories-card">
+                    <div class="px-lg-3 py-lg-5 p-3 card-bg rounded-1">
+                      <img src="./asset/icons/book-sc.png" alt="">
+                    </div>
+                    <div class="card-body">
+                      <p class="card-text">Book Saathi</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                  <div class="card categories-card">
+                    <div class="px-lg-3 py-lg-5 p-3 card-bg rounded-1">
+                      <img src="./asset/icons/fees-charge.png" alt="">
+                    </div>
+                    <div class="card-body">
+                      <p class="card-text">Fees and Charges</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                  <div class="card categories-card">
+                    <div class="px-lg-3 py-lg-5 p-3 card-bg rounded-1">
+                      <img src="./asset/icons/our-services.png" alt="">
+                    </div>
+                    <div class="card-body">
+                      <p class="card-text">Our Services</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-12 col-sm-12"></div>
+        </div>
+      </div>
+    </section>
+    <!-- Foot Image -->
+    <div class="foot-img">
+      <img src="" alt="Promotional image" />
+    </div>
+    <!-- Footer -->
+    <footer class="footer">
+      <p>Company details</p>
+      <p>Privacy</p>
+      <p>Term and Conditions</p>
+      <p>Rate Us</p>
+      <p>FAQ</p>
+      <p>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-twitter"></i>
+      </p>
+    </footer>
+  </body>
+</html>
